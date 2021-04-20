@@ -50,7 +50,8 @@ jobs:
 
     - name: Install dependencies
       run: | 
-        apt-get install afl
+        sudo apt-get update
+        sudo apt-get install afl
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild
